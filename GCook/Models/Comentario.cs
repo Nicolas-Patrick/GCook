@@ -17,7 +17,7 @@ public class Comentario
 
     [Display(Name = "Usuario")]
     [Required(ErrorMessage = "O Usuario é obrigatório")]
-    public int UsuarioId { get; set; }
+    public string UsuarioId { get; set; }
     [ForeignKey("UsuarioId")]
     [Display(Name = "Usuario")]
     public Usuario Usuario { get; set; }
